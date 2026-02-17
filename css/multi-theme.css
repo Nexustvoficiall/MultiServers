@@ -1,9 +1,9 @@
 :root{
-  --multi-red: #ff1e1e;
-  --multi-silver: #cfcfcf;
+  --multi-yellow: #ffd500;
+  --multi-green: #00c853;
   --multi-dark: #0b0b0f;
-  --multi-accent: #ff7b7b;
-  --multi-shadow: rgba(255,30,30,0.12);
+  --multi-accent: #b7ff6a;
+  --multi-shadow: rgba(255,213,0,0.12);
 }
 
 /* Base */
@@ -28,37 +28,37 @@ body:before{
 
 /* Header / Sidebar */
 .sidebar-heading{
-  background: linear-gradient(90deg, var(--multi-red), #b30000);
-  color: var(--multi-silver) !important;
+  background: linear-gradient(90deg, var(--multi-yellow), #e6c200);
+  color: #0b0b0b !important;
   font-weight: 700;
   box-shadow: 0 6px 30px var(--multi-shadow);
 }
 
 .list-group-item{
   background: transparent;
-  color: var(--multi-silver);
+  color: var(--multi-accent);
   border: none;
 }
-.list-group-item:hover{ background: rgba(255,30,30,0.04); color: var(--multi-accent); }
+.list-group-item:hover{ background: rgba(255,213,0,0.06); color: var(--multi-green); }
 
 /* Navbar */
-.navbar{ background: linear-gradient(180deg, rgba(255,30,30,0.06), transparent); }
+.navbar{ background: linear-gradient(180deg, rgba(255,213,0,0.06), transparent); }
 
 /* Buttons */
-.btn-primary, .btn-warning, .btn-info{ background: linear-gradient(90deg, var(--multi-red), #b30000); border: none; color: var(--multi-silver); }
-.btn-danger{ background: #8b0000; color: var(--multi-silver); }
+.btn-primary, .btn-warning, .btn-info{ background: linear-gradient(90deg, var(--multi-yellow), #e6c200); border: none; color: #0b0b0b; }
+.btn-danger{ background: #2b8a00; color: var(--multi-accent); }
 
 /* Forms and inputs */
-.form-control{ background: #111; color: var(--multi-silver); border: 1px solid rgba(255,255,255,0.04); }
+.form-control{ background: #111; color: var(--multi-accent); border: 1px solid rgba(255,255,255,0.04); }
 
 /* Table & DataTables */
-table.dataTable thead th{ background: rgba(255,30,30,0.04); color: var(--multi-silver); }
+table.dataTable thead th{ background: rgba(255,213,0,0.04); color: var(--multi-accent); }
 
 /* Page messages */
-#pageMessages .alert{ background: linear-gradient(90deg, rgba(255,30,30,0.05), transparent); color: var(--multi-silver); border: 1px solid rgba(255,255,255,0.03); }
+.pageMessages .alert, #pageMessages .alert{ background: linear-gradient(90deg, rgba(255,213,0,0.05), transparent); color: var(--multi-accent); border: 1px solid rgba(255,255,255,0.03); }
 
 /* Logo / Brand */
-.multi-brand{ filter: drop-shadow(0 6px 20px rgba(255,30,30,0.12)); }
+.multi-brand{ filter: drop-shadow(0 6px 20px rgba(255,213,0,0.12)); }
 
 @media (max-width: 768px){
   .sidebar-heading{ font-size: 1.1rem; }

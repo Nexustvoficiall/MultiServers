@@ -5,7 +5,7 @@ particlesJS(
         'value': 300
       },
         'color': {
-          'value': ['#ff1e1e', '#ff7b7b', '#cfcfcf']
+          'value': ['#ffd500', '#00c853', '#b7ff6a']
         },
       'shape': {
         'type':  ["circle","square","polygon"],

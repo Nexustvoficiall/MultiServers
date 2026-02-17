@@ -76,8 +76,8 @@ body{
 <div class="container">
     <div class="row">
         <div class="col-lg-4 mx-md-auto">
-            <div class="text-center">
-                <img class="w-75 p-3" src="./img/logo.png" alt="">
+                <div class="text-center">
+                <img class="w-75 p-3" src="./img/ic_launcher.png" alt="">
             </div>
             <br>
             <form method="post">
