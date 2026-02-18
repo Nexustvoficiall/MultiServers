@@ -80,37 +80,40 @@ html, body { height: 100%; }
 }
 .login-box{
     width: 100%;
-    max-width: 420px;
+    max-width: 900px;
     transform: translateY(40px);
 }
+
+.logo-img{max-width:320px;width:100%;height:auto;}
+.login-panel{background: rgba(11,11,15,0.6); padding:24px; border-radius:8px; box-shadow:0 8px 30px rgba(0,0,0,0.6);} 
+.login-form .form-control{font-size:1.05rem;padding:12px 14px}
+.login-form .btn{font-size:1.05rem;padding:10px 14px}
 </style>
 </style>
 <body>
 <div id="js-particles"></div>
 <div class="login-wrapper">
     <div class="container login-box">
-        <div class="row">
-                <div class="col-lg-4 mx-md-auto">
-                <div class="text-center">
-                <img class="w-75 p-3" src="./img/ic_launcher.png" alt="">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center">
+                <img class="logo-img p-3" src="./img/ic_launcher.png" alt="">
             </div>
-            <br>
-            <form method="post">
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-lg"
-                           placeholder="Username" name="username" required autofocus>
+            <div class="col-md-6">
+                <div class="login-panel">
+                    <form method="post" class="login-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Username" name="username" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password" name="password" required>
+                        </div>
+                        <input type="submit" class="btn btn-warning btn-block" value="Log In" name="login">
+                    </form>
+                    <div class="text-center mt-3"><a class="list-grup-item" href="https://t.me/" target="_blank">&nbsp;&nbsp;&copy; <?=date("Y")?> Multi Servers</a></div>
                 </div>
-                <div class="form-group">
-                    <input type="password" class="form-control form-control-lg"
-                           placeholder="Password" name="password" required>
-                </div>
-                <input type="submit" class="btn btn-warning btn-lg btn-block" value="Log In" name="login">
-            </form>
-            <br>
-            <center><a class="list-grup-item" href="https://t.me/" target="_blank">&nbsp&nbsp&nbsp&nbsp&#169 <?=date("Y")?> * Multi Servers * </a></center>
+            </div>
         </div>
     </div>
-        </div>
     </div>
 </div>
 
