@@ -70,12 +70,27 @@ body{
   position: fixed;
 }
 </style>
+<style>
+html, body { height: 100%; }
+.login-wrapper{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-box{
+    width: 100%;
+    max-width: 420px;
+    transform: translateY(40px);
+}
+</style>
+</style>
 <body>
 <div id="js-particles"></div>
-<br><br>
-<div class="container">
-    <div class="row">
-        <div class="col-lg-4 mx-md-auto">
+<div class="login-wrapper">
+    <div class="container login-box">
+        <div class="row">
+                <div class="col-lg-4 mx-md-auto">
                 <div class="text-center">
                 <img class="w-75 p-3" src="./img/ic_launcher.png" alt="">
             </div>
@@ -95,8 +110,9 @@ body{
             <center><a class="list-grup-item" href="https://t.me/" target="_blank">&nbsp&nbsp&nbsp&nbsp&#169 <?=date("Y")?> * Multi Servers * </a></center>
         </div>
     </div>
+        </div>
+    </div>
 </div>
-<br><br>
 
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
