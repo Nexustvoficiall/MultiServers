@@ -28,8 +28,12 @@ if (empty($loggedinuser) && isset($_SESSION['name']) && $_SESSION['name'] === $l
 <style>
 body{
   background-color: #181828;
-  background-image: url("./img/binding_dark.webp");
-  color #fff;
+  /* use same login background if available */
+  background-image: url("./img/bg.png"), url("./img/bg.jpeg"), url("./img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--multi-accent);
 }
 
 #particles-js{
@@ -75,10 +79,8 @@ body{
   margin-right:.3em;
 }
 </style>
+
 <div id="js-particles"></div>
-<body> 
-
-
   <div class="d-flex" id="wrapper">
     <!-- Sidebar-->
     <div class="" id="sidebar-wrapper">
@@ -105,9 +107,9 @@ body{
 	<!-- Page Content -->
 	<div id="page-content-wrapper">
 
-	  <nav class="navbar navbar-expand-lg navbar-dark ">
+      <nav class="navbar navbar-expand-lg navbar-dark ">
 
-		<button class="btn btn-primary" id="menu-toggle"><img src="img/logo.png" width="25" height="25" class="d-flex justify-content-center text-allign centre" alt=""></button>
+        <button class="btn btn-primary" id="menu-toggle"><img src="img/ic_launcher.png" width="28" height="28" class="d-flex justify-content-center text-allign centre multi-brand" alt=""></button>
 		
 	  &nbsp;&nbsp;
 		<div class="center" id="pageMessages"></div>
